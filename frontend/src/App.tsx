@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+// import the json movie data
 import MovieData from './MovieData.json';
 
-// create a welcome screen
+// home page
 function Home() {
   return (
     <div>
@@ -40,6 +41,7 @@ function Home() {
   );
 }
 
+// podcast link page
 function Podcasts() {
   return (
     <div>
@@ -72,6 +74,7 @@ function Podcasts() {
   );
 }
 
+// Movie list page with custom syles
 function MovieList() {
   return (
     <div>
@@ -125,6 +128,7 @@ function MovieList() {
   );
 }
 
+// routes to each of the pages
 function App() {
   return (
     <Router>
